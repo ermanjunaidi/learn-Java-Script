@@ -1,58 +1,99 @@
-// 01.Write a single line comment which says, comments can make code readable
-// comments can make code readable
+// Exercise: Level 1
 
-// 02.Write another single comment which says, Welcome to 30DaysOfJavaScript
-// Welcome to 30DaysOfJavaScript
+// 01.Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
+// let challenge = "30 Days Of JavaScript"
 
-// 03.Write a multiline comment which says, comments can make code readable, easy to reuse and informative
-/*
-comments can make code readable, 
-easy to reuse and informative
-*/
+// 02.Print the string on the browser console using console.log()
+// console.log(challenge)
 
-// 04.Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
+// 03.Print the length of the string on the browser console using console.log()
+// console.log(challenge.length)
 
-// let firstName = "erman"
-// true
-// undefined
-// null
+// 04.Change all the string characters to capital letters using toUpperCase() method
+// console.log(challenge.toLocaleUpperCase())
 
-// 05.Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
+// 05.Change all the string characters to lowercase letters using toLowerCase() method
+// console.log(challenge.toLocaleLowerCase())
 
-// let firstName = "erman"
-// true
-// undefined
-// null
+// 06.Cut (slice) out the first word of the string using substr() or substring() method
+// console.log(challenge.substring(0,1))
 
+// 07.Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
+// console.log(challenge.slice(3))
 
-// console.log(typeof firstName)
-// console.log(typeof true)
-// console.log(typeof undefined)
-// console.log(typeof null)
+// 08.Check if the string contains a word Script using includes() method
+// console.log(challenge.includes("Script"))
 
-// 06.Declare four variables without assigning values
-// let firstName
-// let lastName
-// let age
-// let location
+// 09.Split the string into an array using split() method
+// console.log(challenge.split())   
 
-// 07.Declare four variables with assigned values
-// let firstName = "erman"
-// let lastName = "Junaidi"
-// let age = 40
-// let location = "Semarang"
+// 10.Split the string 30 Days Of JavaScript at the space using split() method
+// console.log(challenge.split(''))
 
-// 08.Declare variables to store your first name, last name, marital status, country and age in multiple lines
-// let firstName = "erman"
-// let lastName = "Junaidi"
-// let maritalStatus = "married"
-// let age = 40
+// 11.'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
+// let string = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+// console.log(string.split(', '))
 
-// 09.Declare variables to store your first name, last name, marital status, country and age in a single line
-// let firstName = "erman", lastName = "junaidi", maritalStatus = "married", age = 40
-// console.log(firstName, lastName, maritalStatus, age)
+// 12.Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
+// let string = "30 Days Of JavaScript"
+// console.log(string.replace("JavaScript", "Python"))
 
-// 10.Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
-// let myAge = 40
-// let yourAge = 30
-// console.log(myAge, yourAge)
+// 13.What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
+// let string = "30 Days Of JavaScript"
+// console.log(string.charAt(15)) // S
+
+// 14.What is the character code of J in '30 Days Of JavaScript' string using charCodeAt()
+// 15.Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
+// 16.Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
+// 17.Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+// 18.Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+// 19.Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+// 20.Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
+// 21.Use startsWith() method with the string 30 Days Of JavaScript and make the result true
+// 22.Use endsWith() method with the string 30 Days Of JavaScript and make the result true
+// 23.Use match() method to find all the a’s in 30 Days Of JavaScript
+// 24.Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
+// 25.Use repeat() method to print 30 Days Of JavaScript 2 times
+
+// Exercise: Level 2
+
+// Using console.log() print out the following statement:
+
+// The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
+// Using console.log() print out the following quote by Mother Teresa:
+
+// "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+// Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+
+// Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+
+// Check if 'on' is found in both python and jargon
+
+// I hope this course is not full of jargon. Check if jargon is in the sentence.
+
+// Generate a random number between 0 and 100 inclusively.
+
+// Generate a random number between 50 and 100 inclusively.
+
+// Generate a random number between 0 and 255 inclusively.
+
+// Access the 'JavaScript' string characters using a random number.
+
+// Use console.log() and escape characters to print the following pattern.
+
+// 1 1 1 1 1
+// 2 1 2 4 8
+// 3 1 3 9 27
+// 4 1 4 16 64
+// 5 1 5 25 125
+// Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+// Exercises: Level 3
+// 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
+
+// Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+// Clean the following text and find the most frequent word (hint, use replace and regular expressions).
+
+//     const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+// Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
