@@ -1,156 +1,133 @@
-// Exercise: Level 1
+// Exercises: Level 1
+//01. Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
+// let firstName = "erman";
+// let lastName = "junaidi";
+// let country = "egypt";
+// let city = "cairo";
+// let age = 25;
+// let isMarried = true;
+// let year = 2024;
 
-// 01.Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
-// let challenge = "30 Days Of JavaScript"
+// console.log(firstName, typeof firstName);
+// console.log(lastName, typeof lastName);
+// console.log(country, typeof country);
+// console.log(city, typeof city);
+// console.log(age, typeof age);
+// console.log(isMarried, typeof isMarried);
+// console.log(year, typeof year);
 
-// 02.Print the string on the browser console using console.log()
-// console.log(challenge)
+// 02.Check if type of '10' is equal to 10
+// console.log(typeof "10" === 10); //false
 
-// 03.Print the length of the string on the browser console using console.log()
-// console.log(challenge.length)
+// 03.Check if parseInt('9.8') is equal to 10
+// console.log(parseInt("9.8") === 10); //false
 
-// 04.Change all the string characters to capital letters using toUpperCase() method
-// console.log(challenge.toLocaleUpperCase())
+// 04.Boolean value is either true or false.
+// false
 
-// 05.Change all the string characters to lowercase letters using toLowerCase() method
-// console.log(challenge.toLocaleLowerCase())
+// 05.Write three JavaScript statement which provide truthy value.
+// console.log(1); // Any number is truthy
+// console.log("Hello!"); // Any non-empty string is truthy
+// console.log([]); // An empty array is truthy
 
-// 06.Cut (slice) out the first word of the string using substr() or substring() method
-// console.log(challenge.substring(0,1))
+// 06.Write three JavaScript statement which provide falsy value.
+// console.log(0);           // The number 0 is falsy
+// console.log("");          // An empty string is falsy
+// console.log(null);        // The value null is falsy
 
-// 07.Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
-// console.log(challenge.slice(3))
+// 07.Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
 
-// 08.Check if the string contains a word Script using includes() method
-// console.log(challenge.includes("Script"))
+// 4 > 3
+// 4 >= 3
+// 4 < 3
+// 4 <= 3
+// 4 == 4
+// 4 === 4
+// 4 != 4
+// 4 !== 4
+// 4 != '4'
+// 4 == '4'
+// 4 === '4'
+// Find the length of python and jargon and make a falsy comparison statement.
+// Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
 
-// 09.Split the string into an array using split() method
-// console.log(challenge.split())   
+// 4 > 3 && 10 < 12
+// 4 > 3 && 10 > 12
+// 4 > 3 || 10 < 12
+// 4 > 3 || 10 > 12
+// !(4 > 3)
+// !(4 < 3)
+// !(false)
+// !(4 > 3 && 10 < 12)
+// !(4 > 3 && 10 > 12)
+// !(4 === '4')
+// There is no 'on' in both dragon and python
+// Use the Date object to do the following activities
 
-// 10.Split the string 30 Days Of JavaScript at the space using split() method
-// console.log(challenge.split(''))
+// What is the year today?
+// What is the month today as a number?
+// What is the date today?
+// What is the day today as a number?
+// What is the hours now?
+// What is the minutes now?
+// Find out the numbers of seconds elapsed from January 1, 1970 to now.
+// Exercises: Level 2
+// Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
 
-// 11.'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
-// let string = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
-// console.log(string.split(', '))
+// Enter base: 20
+// Enter height: 10
+// The area of the triangle is 100
+// Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
 
-// 12.Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
-// let string = "30 Days Of JavaScript"
-// console.log(string.replace("JavaScript", "Python"))
+// Enter side a: 5
+// Enter side b: 4
+// Enter side c: 3
+// The perimeter of the triangle is 12
+// Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
 
-// 13.What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
-// let string = "30 Days Of JavaScript"
-// console.log(string.charAt(15)) // S
+// Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
 
-// 14.What is the character code of J in '30 Days Of JavaScript' string using charCodeAt()
-// let string = '30 Days Of JavaScript'
-// console.log(string.charCodeAt('J'))
+// Calculate the slope, x-intercept and y-intercept of y = 2x -2
 
-// 15.Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
-// let string = '30 Days Of JavaScript'
-// console.log(string.indexOf('3'))
+// Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
 
-// 16.Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
-// let string = '30 Days Of JavaScript'
-// console.log(string.lastIndexOf('a'))
+// Compare the slope of above two questions.
 
-// 17.Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-// let string = "You cannot end a sentence with because because because is a conjunction"
-// console.log(string.indexOf('because'))
+// Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
 
-// 18.Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-// let string = "You cannot end a sentence with because because because is a conjunction"
-// console.log(string.lastIndexOf('because'))
+// Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
 
-// 19.Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-// let string = "You cannot end a sentence with because because because is a conjunction"
-// console.log(string.search('because'))
+// Enter hours: 40
+// Enter rate per hour: 28
+// Your weekly earning is 1120
+// If the length of your name is greater than 7 say, your name is long else say your name is short.
 
-// 20.Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
-// let string = '  30 Days Of JavaScript'
-// console.log(string.trim(' '))
+// Compare your first name length and your family name length and you should get this output.
 
-// 21.Use startsWith() method with the string 30 Days Of JavaScript and make the result true
-// let string = '30 Days Of JavaScript'
-// console.log(string.startsWith('30'))
+// let firstName = 'Asabeneh'
+// let lastName = 'Yetayeh'
+// Your first name, Asabeneh is longer than your family name, Yetayeh
+// Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
 
-// 22.Use endsWith() method with the string 30 Days Of JavaScript and make the result true
-// let string = '30 Days Of JavaScript'
-// console.log(string.endsWith('JavaScript'))
+// let myAge = 250
+// let yourAge = 25
+// I am 225 years older than you.
+// Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
 
-// 23.Use match() method to find all the a’s in 30 Days Of JavaScript
-// let string = '30 Days Of JavaScript'
-// console.log(string.match(/30/g))
+// Enter birth year: 1995
+// You are 25. You are old enough to drive
 
-// 24.Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
-// let string1 = "30 Days of"
-// let string2 = "JavaScript"
-// console.log(`${string1} ${string2}`)
+// Enter birth year: 2005
+// You are 15. You will be allowed to drive after 3 years.
+// Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
 
-// 25.Use repeat() method to print 30 Days Of JavaScript 2 times
-// let string = "30 Days Of JavaScript"
-// console.log((string + '\n') .repeat(30).trim())
+// Enter number of years you live: 100
+// You lived 3153600000 seconds.
+// Create a human readable time format using the Date time object
 
-// Exercise: Level 2
-
-// 01.Using console.log() print out the following statement:
-// The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
-// console.log("The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.")
-
-// 02.Using console.log() print out the following quote by Mother Teresa:
-// "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
-// console.log("Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.")
-
-// 03.Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
-// let value = '10';
-// if (typeof value !== 'number') {
-//     value = Number(value); // Convert the string to a number
-// }
-// console.log(value === 10); 
-
-// 04.Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
-// let value='9.8';
-// if (typeof value !== 'number') {
-//     value = Number(value); // Convert the string to a number
-// }
-// console.log(value === 10);
-// 05.Check if 'on' is found in both python and jargon
-// let word1 = "python";
-// let word2 = "jargon";
-// let result = word1.includes("on") && word2.includes("on");
-// console.log(result); // true
-
-// 06.I hope this course is not full of jargon. Check if jargon is in the sentence.
-// let sentence = "I hope this course is not full of jargon";
-
-// 08.Generate a random number between 50 and 100 inclusively.
-// console.log(Math.floor(Math.random() * 51) + 50);
-
-// 09.Generate a random number between 0 and 255 inclusively.
-// let string = "JavaScript";
-// console.log(Math.floor(Math.random() * string.length));
-
-// 11.Use console.log() and escape characters to print the following pattern.
-//  1 1 1 1 1
-//  2 1 2 4 8
-//  3 1 3 9 27
-//  4 1 4 16 64
-//  5 1 5 25 125
-// console.log('1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125')
-
-// 12.Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
-// console.log("You cannot end a sentence with because because because is a conjunction".substr(31, 20))
-
+// YYYY-MM-DD HH:mm
+// DD-MM-YYYY HH:mm
+// DD/MM/YYYY HH:mm
 // Exercises: Level 3
-// 01.'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
-// console.log("Love is the best thing in this world. Some found their love and some are still looking for their love.".match(/love/g).length)
-
-// 02.Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-// console.log("You cannot end a sentence with because because because is a conjunction".match(/because/g).length)
-
-// 03.Clean the following text and find the most frequent word (hint, use replace and regular expressions).
-// const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
-// console.log(sentence.replace(/[^\w\s]/g, '').replace(/\s+/g, ' ').split(' ').sort((a, b) => b.length - a.length)[0])
-
-//04.Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
-// console.log((5000 + 10000 + 15000) * 12)
+// Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
+// YYY-MM-DD HH:mm eg. 20120-01-02 07:05
